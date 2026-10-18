@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
 
 :root {
-    --bg-color: #F9F8F6; /* Warm off-white ala SSENSE */
+    --bg-color: #F9F8F6;
     --text-main: #1A1A1A;
-    --text-muted: #666666;
+    --text-muted: #888888;
     --font-logo: 'Cinzel', serif;
-    --font-heading: 'Playfair Display', serif; /* Font editorial mewah */
+    --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
 }
 
@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 5% 1.5rem;
+    padding: 2.5rem 5% 1rem;
     background-color: var(--bg-color);
     position: sticky;
     top: 0;
@@ -43,24 +43,67 @@ body {
     color: var(--text-main);
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-main);
-    margin-left: 2.5rem;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
+.gender-nav {
+    display: flex;
+    gap: 1.8rem;
 }
 
-.nav-links a:hover {
-    opacity: 0.5;
+/* HAPUS BORDER & OUTLINE KOTAK BADAK DARI BUTTON */
+.gender-btn {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0 0 2px 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+}
+
+.gender-btn.active, .gender-btn:hover {
+    color: var(--text-main);
+    font-weight: 600;
+    border-bottom: 1px solid var(--text-main) !important; /* Hanya garis bawah tipis */
+}
+
+/* SUB NAV ITEM FILTER */
+.sub-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 1rem 5% 2.5rem;
+    flex-wrap: wrap;
+}
+
+.item-btn {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 0;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+}
+
+.item-btn.active, .item-btn:hover {
+    color: var(--text-main);
+    font-weight: 600;
 }
 
 /* MAIN CONTAINER */
 .container {
-    padding: 1rem 5% 6rem;
+    padding: 0 5% 6rem;
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -68,20 +111,20 @@ body {
 /* GRID PRODUK ALA SSENSE */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 4rem 2.5rem; /* Jarak vertikal dijauhkan biar elegan */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem 2.5rem;
 }
 
 .card {
     background: transparent;
     display: flex;
     flex-direction: column;
-    border: none; /* Hilangkan garis kotak */
+    border: none !important;
 }
 
 .card-img-wrapper {
     width: 100%;
-    aspect-ratio: 4 / 5; /* Proporsi tinggi ala majalah fashion */
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     margin-bottom: 1.2rem;
     background-color: #EFECE6;
@@ -95,7 +138,7 @@ body {
 }
 
 .card:hover .card-img {
-    transform: scale(1.04); /* Efek zoom super halus saat di-hover */
+    transform: scale(1.04);
 }
 
 .tag {
@@ -132,7 +175,7 @@ body {
     margin-bottom: 1.5rem;
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Potong teks kalau kepanjangan */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -146,7 +189,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 600;
-    border-bottom: 1px solid var(--text-main); /* Garis bawah elegan */
+    border-bottom: 1px solid var(--text-main);
     padding-bottom: 0.2rem;
     align-self: flex-start;
     transition: opacity 0.3s ease;
@@ -156,18 +199,16 @@ body {
     opacity: 0.5;
 }
 
-/* RESPONSIVE UNTUK HP */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        gap: 1.5rem;
-        padding-top: 1.5rem;
+        gap: 1.2rem;
     }
-    .nav-links a {
-        margin: 0 0.8rem;
+    .sub-nav {
+        justify-content: center;
+        gap: 1.2rem;
     }
     .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 3rem 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
 }
