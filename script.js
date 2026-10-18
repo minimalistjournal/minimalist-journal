@@ -163,7 +163,7 @@ const products = [
         category: "under100k",
         image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&auto=format&fit=crop&q=80",
         description: "Celana panjang linen berpotongan high waist dan loose fit. Nyaman untuk aktivitas santai atau liburan.",
-        link: https://vt.tokopedia.com/t/ZS9UHQaGuFK4Y-BR7Bm/
+        link: "https://www.tokopedia.com/azikacollection/tessa-linen-pants-trousers-attire"
     }
 ];
 
