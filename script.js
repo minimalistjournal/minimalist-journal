@@ -154,6 +154,16 @@ const products = [
         image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&auto=format&fit=crop&q=80",
         description: "Kacamata hitam frameless/acetate hitam pekat dengan perlindungan UV400. Memberikan kesan misterius dan berkelas.",
         link: "https://shopee.co.id/"
+    },
+    {
+        id: 16,
+        title: "Tessa Linen Trousers",
+        brand: "AzikaCollection",
+        price: "Rp 85.000",
+        category: "under100k",
+        image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&auto=format&fit=crop&q=80",
+        description: "Celana panjang linen berpotongan high waist dan loose fit. Nyaman untuk aktivitas santai atau liburan.",
+        link: "https://vt.tokopedia.com/t/ZS9UH9fhnBV4u-Ng0Nd/" // Link Tokopedia Affiliate kamu
     }
 ];
 
