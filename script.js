@@ -4,12 +4,12 @@ const products = [
     {
         id: 1,
         title: "Heavyweight Cotton Basic Tee 24s",
-        brand: "Hidden Gem / Shopee Mall",
-        price: "Rp 59.000",
+        brand: "MyBasic / Star Seller",
+        price: "Rp 79.200",
         category: "under100k",
         image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&auto=format&fit=crop&q=80",
         description: "Kaos katun tebal potongan boxy fit. Jahitan rapi tanpa logo, sangat cocok untuk daily outfit quiet luxury.",
-        link: "https://shopee.co.id/" // Ganti dengan link afiliasi lo
+        link: "https://s.shopee.co.id/5AtLuvCTjb" // LINK AFFILIATE JULIAN
     },
     {
         id: 2,
