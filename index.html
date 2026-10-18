@@ -8,21 +8,31 @@
 </head>
 <body>
 
-    <!-- NAVBAR ALA SSENSE -->
+    <!-- NAVBAR ALA SSENSE WITH GENDER TOGGLE -->
     <nav class="navbar">
         <div class="logo">THE MINIMALIST JOURNAL</div>
-        <div class="nav-links">
-            <a href="#" onclick="filterCategory('all')">All Edits</a>
-            <a href="#" onclick="filterCategory('under100k')">Under 100k</a>
-            <a href="#" onclick="filterCategory('mid')">Mid-Range</a>
-            <a href="#" onclick="filterCategory('investment')">Investment</a>
+        
+        <!-- GENDER SELECTOR -->
+        <div class="gender-nav">
+            <button class="gender-btn active" onclick="setGender('all', this)">ALL</button>
+            <button class="gender-btn" onclick="setGender('men', this)">MEN</button>
+            <button class="gender-btn" onclick="setGender('women', this)">WOMEN</button>
         </div>
     </nav>
 
-    <!-- PRODUCT GRID (Langsung Tampil Tanpa Teks Hero) -->
+    <!-- SUB-FILTER ITEM TYPE -->
+    <div class="sub-nav">
+        <button class="item-btn active" onclick="setItemType('all', this)">ALL EDITS</button>
+        <button class="item-btn" onclick="setItemType('tops', this)">TOPS</button>
+        <button class="item-btn" onclick="setItemType('pants', this)">PANTS</button>
+        <button class="item-btn" onclick="setItemType('footwear', this)">FOOTWEAR</button>
+        <button class="item-btn" onclick="setItemType('accessories', this)">ACCESSORIES</button>
+    </div>
+
+    <!-- PRODUCT GRID -->
     <div class="container">
         <div class="product-grid" id="productContainer">
-            <!-- Produk otomatis dimuat dari script.js di sini -->
+            <!-- Dimuat via script.js -->
         </div>
     </div>
 
