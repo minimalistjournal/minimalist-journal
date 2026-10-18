@@ -3,47 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Minimalist Journal | Quiet Luxury Guide</title>
-    <meta name="description" content="Kurasi outfit bergaya Quiet Luxury & Minimalist Daily Wear mulai dari Rp50 ribuan.">
+    <title>The Minimalist Journal</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
+    <!-- NAVBAR ALA SSENSE -->
+    <nav class="navbar">
         <div class="logo">THE MINIMALIST JOURNAL</div>
-        <nav class="nav-links">
-            <a href="#" class="active" onclick="filterCategory('all')">All Edits</a>
+        <div class="nav-links">
+            <a href="#" onclick="filterCategory('all')">All Edits</a>
             <a href="#" onclick="filterCategory('under100k')">Under 100k</a>
             <a href="#" onclick="filterCategory('mid')">Mid-Range</a>
             <a href="#" onclick="filterCategory('investment')">Investment</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <span class="sub-title">CURATED ESSENTIALS</span>
-            <h1>The Art of Quiet Luxury</h1>
-            <p>A curated guide to timeless, high-quality daily wear. Effortless style starting from 50k.</p>
         </div>
-    </section>
+    </nav>
 
-    <main class="container">
-        <div class="section-header">
-            <h2>Curated Collection</h2>
-            <p>Pilihan koleksi dengan potongan presisi, bahan nyaman, dan estetika minimalis.</p>
-        </div>
-
+    <!-- PRODUCT GRID (Langsung Tampil Tanpa Teks Hero) -->
+    <div class="container">
         <div class="product-grid" id="productContainer">
-            <!-- Produk bakal di-load otomatis via script.js -->
+            <!-- Produk otomatis dimuat dari script.js di sini -->
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 The Minimalist Journal. Curated with intention.</p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
