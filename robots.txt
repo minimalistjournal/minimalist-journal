@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://minimalistjournal.github.io/minimalist-journal/sitemap.xml
