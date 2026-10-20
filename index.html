@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Minimalist Journal</title>
+    <title>The Minimalist Journal — Curated Archive</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Open Graph / Social Media Meta Tags (SEO) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://minimalistjournal.github.io/minimalist-journal/">
     <meta property="og:title" content="The Minimalist Journal — A Curated Digital Archive">
-    <meta property="og:description" content="A noise-free digital museum of curated everyday carry, desk setup, and aesthetic essentials.">
-    <meta property="og:image" content="https://minimalistjournal.github.io/minimalist-journal/preview-image.jpg">
+    <meta property="og:description" content="A noise-free digital museum of curated everyday carry, desk setup, and aesthetic essentials starting from IDR 50k.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523381210434-271e8be1f25b?auto=format&fit=crop&w=800&q=80">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Minimalist Journal — A Curated Digital Archive">
-    <meta name="twitter:description" content="A noise-free digital museum of curated everyday carry, desk setup, and aesthetic essentials.">
-    <meta name="twitter:image" content="https://minimalistjournal.github.io/minimalist-journal/preview-image.jpg">
+    <meta name="twitter:description" content="A noise-free digital museum of curated everyday carry, desk setup, and aesthetic essentials starting from IDR 50k.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1523381210434-271e8be1f25b?auto=format&fit=crop&w=800&q=80">
 
     <style>
         .catalog-container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
+        }
+
+        /* Hero Banner Tagline */
+        .hero-tagline {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 10px 0;
+            border-bottom: 1px dashed #e5e5e5;
+        }
+
+        .hero-tagline p {
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #555;
+            margin: 0;
+            font-weight: 500;
         }
 
         /* Filter Section Styling */
@@ -44,12 +61,13 @@
             color: #888;
             cursor: pointer;
             padding: 5px 10px;
-            transition: color 0.2s ease;
+            transition: color 0.2s ease, font-weight 0.2s ease;
         }
 
         .sub-btn:hover, .sub-btn.active {
             color: #1a1a1a;
-            font-weight: 600;
+            font-weight: 700;
+            border-bottom: 1px solid #1a1a1a;
         }
 
         /* Product Grid Styling */
@@ -64,20 +82,32 @@
             flex-direction: column;
             text-decoration: none;
             color: inherit;
-            transition: opacity 0.2s ease;
+            transition: transform 0.2s ease, opacity 0.2s ease;
         }
 
         .product-card:hover {
-            opacity: 0.8;
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        .product-image-wrap {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            background-color: #f2f2f2;
+            overflow: hidden;
+            margin-bottom: 12px;
+            border-radius: 2px;
         }
 
         .product-image {
             width: 100%;
-            aspect-ratio: 3 / 4;
-            background-color: #f2f2f2;
+            height: 100%;
             object-fit: cover;
-            margin-bottom: 12px;
-            border-radius: 2px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.03);
         }
 
         .product-title {
@@ -92,13 +122,21 @@
         .product-desc {
             font-size: 0.75rem;
             color: #777;
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
             line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
         }
 
         .buy-btn {
             display: inline-block;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 600;
             color: #1a1a1a;
             text-decoration: underline;
@@ -138,6 +176,11 @@
     <!-- KATALOG CONTAINER -->
     <main class="catalog-container">
 
+        <!-- HERO TAGLINE HARGA AFFORDABLE -->
+        <div class="hero-tagline">
+            <p>Curated Essentials & Style Finds — Starting from Rp 50.000</p>
+        </div>
+
         <!-- SUB-CATEGORY FILTER (ENGLISH) -->
         <div class="sub-nav">
             <button class="sub-btn active" onclick="setType('all', this)">ALL ITEMS</button>
@@ -147,72 +190,231 @@
             <button class="sub-btn" onclick="setType('accessories', this)">ACCESSORIES</button>
         </div>
 
-        <!-- PRODUCT GRID (16 ITEMS) -->
+        <!-- PRODUCT GRID (16 ITEMS REAL FOTO + HARGA) -->
         <div class="product-grid" id="productGrid">
 
             <!-- Item 1 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="tops">
-                <img src="https://via.placeholder.com/300x400/f0f0f0/333333?text=Heavyweight+Tee" alt="Heavyweight Tee" class="product-image">
-                <h2 class="product-title">Heavyweight Cotton Tee</h2>
-                <p class="product-desc">Boxy fit 24s combed cotton tee in off-white.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Heavyweight Cotton Tee" class="product-image">
+                </div>
+                <h2 class="product-title">Heavyweight Plain Cotton Tee</h2>
+                <p class="product-desc">Boxy fit 24s combed cotton tee in plain white.</p>
+                <div class="product-price">Rp 55.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 2 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="tops">
-                <img src="https://via.placeholder.com/300x400/e8e8e8/333333?text=Linen+Shirt" alt="Linen Shirt" class="product-image">
-                <h2 class="product-title">Oversized Linen Shirt</h2>
-                <p class="product-desc">Breathable organic linen button-down shirt.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=600&q=80" alt="Oversized Linen Shirt" class="product-image">
+                </div>
+                <h2 class="product-title">Oversized Linen Blouse</h2>
+                <p class="product-desc">Breathable lightweight linen relaxed shirt.</p>
+                <div class="product-price">Rp 89.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 3 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="bottoms">
-                <img src="https://via.placeholder.com/300x400/f0f0f0/333333?text=Pleated+Trousers" alt="Pleated Trousers" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80" alt="Pleated Trousers" class="product-image">
+                </div>
                 <h2 class="product-title">Relaxed Pleated Trousers</h2>
-                <p class="product-desc">Tailored wide-leg trousers in charcoal black.</p>
+                <p class="product-desc">Tailored wide-leg smart casual pants.</p>
+                <div class="product-price">Rp 129.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 4 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="bottoms">
-                <img src="https://via.placeholder.com/300x400/e8e8e8/333333?text=Wide+Leg+Pants" alt="Wide Leg Pants" class="product-image">
-                <h2 class="product-title">High-Waist Wide Pants</h2>
-                <p class="product-desc">Minimalist flowy high-rise casual trousers.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?auto=format&fit=crop&w=600&q=80" alt="High-Waist Pants" class="product-image">
+                </div>
+                <h2 class="product-title">High-Waist Wide Linen Pants</h2>
+                <p class="product-desc">Flowy aesthetic high-rise minimalist pants.</p>
+                <div class="product-price">Rp 95.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 5 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="footwear">
-                <img src="https://via.placeholder.com/300x400/f0f0f0/333333?text=Canvas+Sneakers" alt="Canvas Sneakers" class="product-image">
-                <h2 class="product-title">Low-Top Canvas Sneakers</h2>
-                <p class="product-desc">Classic vulcanized sole minimalist sneakers.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80" alt="Canvas Sneakers" class="product-image">
+                </div>
+                <h2 class="product-title">Low-Top Black Canvas Sneakers</h2>
+                <p class="product-desc">Classic vulcanized sole daily sneakers.</p>
+                <div class="product-price">Rp 115.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 6 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="footwear">
-                <img src="https://via.placeholder.com/300x400/e8e8e8/333333?text=Leather+Mules" alt="Leather Mules" class="product-image">
-                <h2 class="product-title">Pointed Leather Mules</h2>
-                <p class="product-desc">Sleek slip-on flat leather mules in beige.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Leather Slip Mules" class="product-image">
+                </div>
+                <h2 class="product-title">Pointed Leather Slip Mules</h2>
+                <p class="product-desc">Sleek daily wear flat leather loafers.</p>
+                <div class="product-price">Rp 135.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 7 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="accessories">
-                <img src="https://via.placeholder.com/300x400/f0f0f0/333333?text=Leather+Wallet" alt="Leather Wallet" class="product-image">
-                <h2 class="product-title">Minimalist Cardholder</h2>
-                <p class="product-desc">Slim veg-tanned black leather pocket cardholder.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80" alt="Leather Cardholder" class="product-image">
+                </div>
+                <h2 class="product-title">Slim Leather Pocket Wallet</h2>
+                <p class="product-desc">Minimalist veg-tanned black cardholder.</p>
+                <div class="product-price">Rp 50.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 8 -->
             <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="accessories">
-                <img src="https://via.placeholder.com/300x400/e8e8e8/333333?text=Canvas+Tote" alt="Canvas Tote" class="product-image">
-                <h2 class="product-title">Minimalist Canvas Tote Bag</h2>
-                <p class="product-desc">Heavyweight cotton shoulder tote with zip pocket.</p>
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Canvas Tote" class="product-image">
+                </div>
+                <h2 class="product-title">Heavyweight Canvas Tote Bag</h2>
+                <p class="product-desc">Structured cotton shoulder bag for daily carry.</p>
+                <div class="product-price">Rp 65.000</div>
                 <span class="buy-btn">View on Shopee &rarr;</span>
             </a>
 
             <!-- Item 9 -->
-            <a href="https://shopee.co.id" target
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="tops">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" alt="Plain Black Tee" class="product-image">
+                </div>
+                <h2 class="product-title">Oversized Heavyweight Black Tee</h2>
+                <p class="product-desc">Streetwear boxy fit 20s cotton t-shirt.</p>
+                <div class="product-price">Rp 60.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 10 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="tops">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80" alt="Knit Sweater" class="product-image">
+                </div>
+                <h2 class="product-title">Ribbed Minimalist Knit Top</h2>
+                <p class="product-desc">Soft crewneck slim fit knitwear top.</p>
+                <div class="product-price">Rp 78.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 11 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="bottoms">
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80" alt="Utility Shorts" class="product-image">
+                <h2 class="product-title">Nylon Minimalist Utility Shorts</h2>
+                <p class="product-desc">Quick-dry elastic waistband lounge shorts.</p>
+                <div class="product-price">Rp 70.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 12 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="bottoms">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80" alt="Midi Skirt" class="product-image">
+                </div>
+                <h2 class="product-title">High-Rise Midi A-Line Skirt</h2>
+                <p class="product-desc">Clean silhouette Korean style midi skirt.</p>
+                <div class="product-price">Rp 85.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 13 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="accessories">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80" alt="Minimalist Watch" class="product-image">
+                </div>
+                <h2 class="product-title">Matte Black Leather Watch</h2>
+                <p class="product-desc">Simple analog dial watch with dark leather band.</p>
+                <div class="product-price">Rp 145.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 14 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="accessories">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Silver Ring" class="product-image">
+                </div>
+                <h2 class="product-title">Silver Minimalist Band Ring Set</h2>
+                <p class="product-desc">Polished stackable daily metal band rings.</p>
+                <div class="product-price">Rp 50.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 15 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="footwear">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80" alt="Chunky Derby Shoes" class="product-image">
+                </div>
+                <h2 class="product-title">Matte Leather Chunky Derby Shoes</h2>
+                <p class="product-desc">Lug sole dress shoes for modern casual fit.</p>
+                <div class="product-price">Rp 220.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 16 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="footwear">
+                <div class="product-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=600&q=80" alt="Minimalist Sandals" class="product-image">
+                </div>
+                <h2 class="product-title">Minimalist Strap Leather Sandals</h2>
+                <p class="product-desc">Slim ankle strap casual flat summer sandals.</p>
+                <div class="product-price">Rp 98.000</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="border-top: 1px solid #e5e5e5; padding: 25px 40px; font-size: 0.8rem; color: #666; display: flex; justify-content: space-between; align-items: center;">
+        <div>&copy; 2026 The Minimalist Journal. All rights reserved.</div>
+        <div>
+            <a href="about.html" style="color: #666; text-decoration: none; margin-left: 15px;">About</a>
+            <a href="privacy.html" style="color: #666; text-decoration: none; margin-left: 15px;">Privacy & Disclosure</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT FILTERING FIX (BERFUNGSI PERFEK) -->
+    <script>
+        let currentGender = 'all';
+        let currentType = 'all';
+
+        function filterProducts() {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const cardGender = card.getAttribute('data-gender');
+                const cardType = card.getAttribute('data-type');
+
+                const matchGender = (currentGender === 'all' || cardGender === currentGender);
+                const matchType = (currentType === 'all' || cardType === currentType);
+
+                if (matchGender && matchType) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function setGender(gender, element) {
+            currentGender = gender.toLowerCase();
+            document.querySelectorAll('.gender-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            filterProducts();
+        }
+
+        function setType(type, element) {
+            currentType = type.toLowerCase();
+            document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            filterProducts();
+        }
+    </script>
+
+</body>
+</html>
