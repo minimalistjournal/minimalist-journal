@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Minimalist Journal</title>
+    <title>The Minimalist Journal — A Curated Digital Archive</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
+
+    <!-- Open Graph / Social Media Meta Tags (SEO) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://minimalistjournal.github.io/minimalist-journal/">
     <meta property="og:title" content="The Minimalist Journal — A Curated Digital Archive">
@@ -21,34 +21,40 @@
 </head>
 <body>
 
-    <!-- NAVBAR ALA SSENSE WITH GENDER TOGGLE -->
-    <nav class="navbar">
-        <div class="logo">THE MINIMALIST JOURNAL</div>
-        
-        <!-- GENDER SELECTOR -->
+    <!-- NAVBAR MEWAH & RAPI -->
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; border-bottom: 1px solid #e5e5e5;">
+        <!-- LOGO -->
+        <div class="logo" style="font-weight: bold; letter-spacing: 1px;">
+            <a href="index.html" style="text-decoration: none; color: inherit;">THE MINIMALIST JOURNAL</a>
+        </div>
+
+        <!-- GENDER SELECTOR (FILTER) -->
         <div class="gender-nav">
             <button class="gender-btn active" onclick="setGender('all', this)">ALL</button>
             <button class="gender-btn" onclick="setGender('men', this)">MEN</button>
             <button class="gender-btn" onclick="setGender('women', this)">WOMEN</button>
         </div>
+
+        <!-- LINK HALAMAN (ABOUT & PRIVACY) -->
+        <div class="page-nav" style="display: flex; gap: 20px; font-size: 0.85rem;">
+            <a href="about.html" style="text-decoration: none; color: #666; font-weight: 500;">About</a>
+            <a href="privacy.html" style="text-decoration: none; color: #666; font-weight: 500;">Privacy</a>
+        </div>
     </nav>
 
-    <!-- SUB-FILTER ITEM TYPE -->
-    <div class="sub-nav">
-        <button class="item-btn active" onclick="setItemType('all', this)">ALL EDITS</button>
-        <button class="item-btn" onclick="setItemType('tops', this)">TOPS</button>
-        <button class="item-btn" onclick="setItemType('pants', this)">PANTS</button>
-        <button class="item-btn" onclick="setItemType('footwear', this)">FOOTWEAR</button>
-        <button class="item-btn" onclick="setItemType('accessories', this)">ACCESSORIES</button>
-    </div>
+    <!-- MAIN CONTENT (KATALOG/PRODUK KAMU) -->
+    <main style="min-height: 60vh; padding: 40px 20px;">
+        <!-- Tempat produk kamu yang nanti disesuaikan -->
+    </main>
 
-    <!-- PRODUCT GRID -->
-    <div class="container">
-        <div class="product-grid" id="productContainer">
-            <!-- Dimuat via script.js -->
+    <!-- FOOTER BAWAH -->
+    <footer style="border-top: 1px solid #e5e5e5; padding: 25px 30px; font-size: 0.8rem; color: #666; display: flex; justify-content: space-between; align-items: center;">
+        <div>&copy; 2026 The Minimalist Journal. All rights reserved.</div>
+        <div>
+            <a href="about.html" style="color: #666; text-decoration: none; margin-left: 15px;">About</a>
+            <a href="privacy.html" style="color: #666; text-decoration: none; margin-left: 15px;">Privacy & Disclosure</a>
         </div>
-    </div>
+    </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
