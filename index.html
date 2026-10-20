@@ -373,4 +373,50 @@
     </main>
 
     <!-- FOOTER -->
-    <footer style="border-top: 1px solid #e5e5
+    <footer style="border-top: 1px solid #e5e5e5; padding: 25px 40px; font-size: 0.8rem; color: #666; display: flex; justify-content: space-between; align-items: center;">
+        <div>&copy; 2026 The Minimalist Journal. All rights reserved.</div>
+        <div>
+            <a href="about.html" style="color: #666; text-decoration: none; margin-left: 15px;">About</a>
+            <a href="privacy.html" style="color: #666; text-decoration: none; margin-left: 15px;">Privacy & Disclosure</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT FILTERING JAVASCRIPT -->
+    <script>
+        let currentGender = 'all';
+        let currentType = 'all';
+
+        function filterProducts() {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const cardGender = card.getAttribute('data-gender');
+                const cardType = card.getAttribute('data-type');
+
+                const matchGender = (currentGender === 'all' || cardGender === currentGender);
+                const matchType = (currentType === 'all' || cardType === currentType);
+
+                if (matchGender && matchType) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function setGender(gender, element) {
+            currentGender = gender.toLowerCase();
+            document.querySelectorAll('.gender-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            filterProducts();
+        }
+
+        function setType(type, element) {
+            currentType = type.toLowerCase();
+            document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            filterProducts();
+        }
+    </script>
+
+</body>
+</html>
