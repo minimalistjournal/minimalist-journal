@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Minimalist Journal — A Curated Digital Archive</title>
+    <title>The Minimalist Journal</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Open Graph / Social Media Meta Tags (SEO) -->
@@ -18,37 +18,236 @@
     <meta name="twitter:title" content="The Minimalist Journal — A Curated Digital Archive">
     <meta name="twitter:description" content="A noise-free digital museum of curated everyday carry, desk setup, and aesthetic essentials.">
     <meta name="twitter:image" content="https://minimalistjournal.github.io/minimalist-journal/preview-image.jpg">
+
+    <style>
+        /* CSS Tambahan Khusus Grid Produk (Minimalis & Clean) */
+        .catalog-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s ease;
+        }
+
+        .product-card:hover {
+            opacity: 0.8;
+        }
+
+        .product-image {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            background-color: #f2f2f2;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border-radius: 2px;
+        }
+
+        .product-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0 0 4px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #1a1a1a;
+        }
+
+        .product-desc {
+            font-size: 0.75rem;
+            color: #777;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- NAVBAR MEWAH & RAPI -->
-    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; border-bottom: 1px solid #e5e5e5;">
-        <!-- LOGO -->
-        <div class="logo" style="font-weight: bold; letter-spacing: 1px;">
-            <a href="index.html" style="text-decoration: none; color: inherit;">THE MINIMALIST JOURNAL</a>
-        </div>
+    <!-- NAVBAR ALA SSENSE -->
+    <nav class="navbar">
+        <div class="logo">THE MINIMALIST JOURNAL</div>
 
-        <!-- GENDER SELECTOR (FILTER) -->
+        <!-- GENDER SELECTOR -->
         <div class="gender-nav">
             <button class="gender-btn active" onclick="setGender('all', this)">ALL</button>
             <button class="gender-btn" onclick="setGender('men', this)">MEN</button>
             <button class="gender-btn" onclick="setGender('women', this)">WOMEN</button>
         </div>
-
-        <!-- LINK HALAMAN (ABOUT & PRIVACY) -->
-        <div class="page-nav" style="display: flex; gap: 20px; font-size: 0.85rem;">
-            <a href="about.html" style="text-decoration: none; color: #666; font-weight: 500;">About</a>
-            <a href="privacy.html" style="text-decoration: none; color: #666; font-weight: 500;">Privacy</a>
-        </div>
     </nav>
 
-    <!-- MAIN CONTENT (KATALOG/PRODUK KAMU) -->
-    <main style="min-height: 60vh; padding: 40px 20px;">
-        <!-- Tempat produk kamu yang nanti disesuaikan -->
+    <!-- KATALOG PRODUK (16 ITEMS) -->
+    <main class="catalog-container">
+        <div class="product-grid">
+
+            <!-- Item 1 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+01" alt="Product 01" class="product-image">
+                <h2 class="product-title">Minimalist Desk Mat</h2>
+                <p class="product-desc">Premium felt desk organizer pad for workspace setup.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 2 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+02" alt="Product 02" class="product-image">
+                <h2 class="product-title">Matte Black Thermos</h2>
+                <p class="product-desc">Double-wall vacuum insulated stainless steel bottle.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 3 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+03" alt="Product 03" class="product-image">
+                <h2 class="product-title">Canvas Tote Bag</h2>
+                <p class="product-desc">Heavyweight cotton daily carry with internal pocket.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 4 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+04" alt="Product 04" class="product-image">
+                <h2 class="product-title">Mechanical Pencil 0.5mm</h2>
+                <p class="product-desc">Full aluminum body precision drafting pencil.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 5 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+05" alt="Product 05" class="product-image">
+                <h2 class="product-title">Wireless Charging Pad</h2>
+                <p class="product-desc">Ultra-slim fast wireless charger with woven fabric top.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 6 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+06" alt="Product 06" class="product-image">
+                <h2 class="product-title">Grid Notebook A5</h2>
+                <p class="product-desc">Hardcover 100gsm fountain pen friendly paper.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 7 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+07" alt="Product 07" class="product-image">
+                <h2 class="product-title">Ceramic Coffee Mug</h2>
+                <p class="product-desc">Handcrafted matte ceramic cup for daily drip coffee.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 8 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+08" alt="Product 08" class="product-image">
+                <h2 class="product-title">Cable Organizer Pouch</h2>
+                <p class="product-desc">Water-resistant travel electronics storage case.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 9 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+09" alt="Product 09" class="product-image">
+                <h2 class="product-title">Oversized Heavy Tee</h2>
+                <p class="product-desc">24s combed cotton boxy fit t-shirt in neutral grey.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 10 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+10" alt="Product 10" class="product-image">
+                <h2 class="product-title">Aluminum Laptop Stand</h2>
+                <p class="product-desc">Ergonomic foldable desktop riser for MacBook & PC.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 11 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+11" alt="Product 11" class="product-image">
+                <h2 class="product-title">Leather Cardholder</h2>
+                <p class="product-desc">Slim veg-tanned leather pocket wallet.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 12 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+12" alt="Product 12" class="product-image">
+                <h2 class="product-title">Desk Ambient Light</h2>
+                <p class="product-desc">Minimalist wooden base LED warm bedside lamp.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 13 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+13" alt="Product 13" class="product-image">
+                <h2 class="product-title">Key Organizer Clip</h2>
+                <p class="product-desc">Compact silent keyholder system for EDC.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 14 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+14" alt="Product 14" class="product-image">
+                <h2 class="product-title">Scented Soy Candle</h2>
+                <p class="product-desc">Cedarwood & amber essential oil room fragrance.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 15 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+15" alt="Product 15" class="product-image">
+                <h2 class="product-title">Stainless Steel Ruler</h2>
+                <p class="product-desc">30cm precision metric measurement scale tool.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+            <!-- Item 16 -->
+            <a href="https://shopee.co.id" target="_blank" class="product-card">
+                <img src="https://via.placeholder.com/300x400/f0f0f0/999999?text=Item+16" alt="Product 16" class="product-image">
+                <h2 class="product-title">Minimalist Wall Clock</h2>
+                <p class="product-desc">Silent sweep movement frameless modern clock.</p>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
+
+        </div>
     </main>
 
-    <!-- FOOTER BAWAH -->
-    <footer style="border-top: 1px solid #e5e5e5; padding: 25px 30px; font-size: 0.8rem; color: #666; display: flex; justify-content: space-between; align-items: center;">
+    <!-- FOOTER -->
+    <footer style="border-top: 1px solid #e5e5e5; padding: 25px 40px; font-size: 0.8rem; color: #666; display: flex; justify-content: space-between; align-items: center;">
         <div>&copy; 2026 The Minimalist Journal. All rights reserved.</div>
         <div>
             <a href="about.html" style="color: #666; text-decoration: none; margin-left: 15px;">About</a>
