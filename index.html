@@ -26,7 +26,6 @@
             padding: 0 20px;
         }
 
-        /* Filter Section Styling */
         .sub-nav {
             display: flex;
             justify-content: center;
@@ -53,7 +52,6 @@
             border-bottom: 1px solid #1a1a1a;
         }
 
-        /* Product Grid Styling */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -159,7 +157,7 @@
     <!-- KATALOG CONTAINER -->
     <main class="catalog-container">
 
-        <!-- SUB-CATEGORY FILTER (ENGLISH) -->
+        <!-- SUB-CATEGORY FILTER -->
         <div class="sub-nav">
             <button class="sub-btn active" onclick="setType('all', this)">ALL ITEMS</button>
             <button class="sub-btn" onclick="setType('tops', this)">TOPS</button>
@@ -168,193 +166,8 @@
             <button class="sub-btn" onclick="setType('accessories', this)">ACCESSORIES</button>
         </div>
 
-        <!-- PRODUCT GRID (URUTAN: TOPS -> BOTTOMS -> FOOTWEAR -> ACCESSORIES) -->
-        <div class="product-grid" id="productGrid">
-
-            <!-- ==================== 1. TOPS (BAJU / ATASAN) ==================== -->
-            <!-- Item 1: Tops - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="tops">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Heavyweight Cotton Tee" class="product-image">
-                </div>
-                <h2 class="product-title">Heavyweight Plain Cotton Tee</h2>
-                <p class="product-desc">Boxy fit 24s combed cotton tee in plain white.</p>
-                <div class="product-price">Rp 65.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 2: Tops - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="tops">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=600&q=80" alt="Oversized Linen Shirt" class="product-image">
-                </div>
-                <h2 class="product-title">Oversized Linen Blouse</h2>
-                <p class="product-desc">Breathable lightweight linen relaxed shirt.</p>
-                <div class="product-price">Rp 135.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 3: Tops - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="tops">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" alt="Wool-Blend Jacket" class="product-image">
-                </div>
-                <h2 class="product-title">Minimalist Wool-Blend Jacket</h2>
-                <p class="product-desc">Tailored outerwear for modern layering.</p>
-                <div class="product-price">Rp 650.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 4: Tops - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="tops">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80" alt="Knit Top" class="product-image">
-                </div>
-                <h2 class="product-title">Ribbed Minimalist Knit Top</h2>
-                <p class="product-desc">Soft crewneck slim fit knitwear top.</p>
-                <div class="product-price">Rp 115.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-
-            <!-- ==================== 2. BOTTOMS (CELANA / BAWAHAN) ==================== -->
-            <!-- Item 5: Bottoms - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="bottoms">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80" alt="Pleated Trousers" class="product-image">
-                </div>
-                <h2 class="product-title">Relaxed Pleated Trousers</h2>
-                <p class="product-desc">Tailored wide-leg smart casual pants.</p>
-                <div class="product-price">Rp 210.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 6: Bottoms - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="bottoms">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?auto=format&fit=crop&w=600&q=80" alt="High-Waist Pants" class="product-image">
-                </div>
-                <h2 class="product-title">High-Waist Wide Linen Pants</h2>
-                <p class="product-desc">Flowy aesthetic high-rise minimalist pants.</p>
-                <div class="product-price">Rp 175.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 7: Bottoms - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="bottoms">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80" alt="Utility Shorts" class="product-image">
-                </div>
-                <h2 class="product-title">Nylon Minimalist Utility Shorts</h2>
-                <p class="product-desc">Quick-dry elastic waistband lounge shorts.</p>
-                <div class="product-price">Rp 95.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 8: Bottoms - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="bottoms">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80" alt="Midi Skirt" class="product-image">
-                </div>
-                <h2 class="product-title">High-Rise Midi A-Line Skirt</h2>
-                <p class="product-desc">Clean silhouette Korean style midi skirt.</p>
-                <div class="product-price">Rp 145.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-
-            <!-- ==================== 3. FOOTWEAR (SEPATU / SANDAL) ==================== -->
-            <!-- Item 9: Footwear - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="footwear">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80" alt="Canvas Sneakers" class="product-image">
-                </div>
-                <h2 class="product-title">Low-Top Black Canvas Sneakers</h2>
-                <p class="product-desc">Classic vulcanized sole daily sneakers.</p>
-                <div class="product-price">Rp 280.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 10: Footwear - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="footwear">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Leather Slip Mules" class="product-image">
-                </div>
-                <h2 class="product-title">Pointed Leather Slip Mules</h2>
-                <p class="product-desc">Sleek daily wear flat leather loafers.</p>
-                <div class="product-price">Rp 320.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 11: Footwear - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="footwear">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80" alt="Chunky Derby Shoes" class="product-image">
-                </div>
-                <h2 class="product-title">Genuine Leather Chunky Derby Shoes</h2>
-                <p class="product-desc">Lug sole dress shoes for modern casual fit.</p>
-                <div class="product-price">Rp 850.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 12: Footwear - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="footwear">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=600&q=80" alt="Minimalist Sandals" class="product-image">
-                </div>
-                <h2 class="product-title">Minimalist Strap Leather Sandals</h2>
-                <p class="product-desc">Slim ankle strap casual flat summer sandals.</p>
-                <div class="product-price">Rp 165.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-
-            <!-- ==================== 4. ACCESSORIES (AKSESORIS / TAS / JAM) ==================== -->
-            <!-- Item 13: Accessories - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="accessories">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80" alt="Leather Cardholder" class="product-image">
-                </div>
-                <h2 class="product-title">Slim Leather Pocket Wallet</h2>
-                <p class="product-desc">Minimalist veg-tanned black cardholder.</p>
-                <div class="product-price">Rp 50.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 14: Accessories - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="accessories">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Canvas Tote" class="product-image">
-                </div>
-                <h2 class="product-title">Heavyweight Canvas Tote Bag</h2>
-                <p class="product-desc">Structured cotton shoulder bag for daily carry.</p>
-                <div class="product-price">Rp 85.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 15: Accessories - Men -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="men" data-type="accessories">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80" alt="Minimalist Watch" class="product-image">
-                </div>
-                <h2 class="product-title">Matte Black Leather Watch</h2>
-                <p class="product-desc">Simple analog dial watch with dark leather band.</p>
-                <div class="product-price">Rp 480.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-            <!-- Item 16: Accessories - Women -->
-            <a href="https://shopee.co.id" target="_blank" class="product-card" data-gender="women" data-type="accessories">
-                <div class="product-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Silver Ring" class="product-image">
-                </div>
-                <h2 class="product-title">Silver Minimalist Band Ring Set</h2>
-                <p class="product-desc">Polished stackable daily metal band rings.</p>
-                <div class="product-price">Rp 50.000</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-
-        </div>
+        <!-- GRID PRODUK (DIISI OTOMATIS OLEH SCRIPT.JS) -->
+        <div class="product-grid" id="productGrid"></div>
     </main>
 
     <!-- FOOTER -->
@@ -366,42 +179,8 @@
         </div>
     </footer>
 
-    <!-- SCRIPT FILTERING JAVASCRIPT -->
-    <script>
-        let currentGender = 'all';
-        let currentType = 'all';
-
-        function filterProducts() {
-            const cards = document.querySelectorAll('.product-card');
-            cards.forEach(card => {
-                const cardGender = card.getAttribute('data-gender');
-                const cardType = card.getAttribute('data-type');
-
-                const matchGender = (currentGender === 'all' || cardGender === currentGender);
-                const matchType = (currentType === 'all' || cardType === currentType);
-
-                if (matchGender && matchType) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        function setGender(gender, element) {
-            currentGender = gender.toLowerCase();
-            document.querySelectorAll('.gender-btn').forEach(btn => btn.classList.remove('active'));
-            element.classList.add('active');
-            filterProducts();
-        }
-
-        function setType(type, element) {
-            currentType = type.toLowerCase();
-            document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
-            element.classList.add('active');
-            filterProducts();
-        }
-    </script>
+    <!-- SCRIPT JS TERPISAH -->
+    <script src="script.js"></script>
 
 </body>
 </html>
