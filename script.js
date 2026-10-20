@@ -1,254 +1,204 @@
+// DATA KATALOG PRODUK (SISTEM TINGGAL EDIT DI SINI NANTI)
 const products = [
-    // --- MEN'S COLLECTION ---
+    // 1. TOPS (BAJU / ATASAN)
     {
-        id: 1,
-        title: "Heavyweight Cotton Basic Tee 24s",
-        brand: "MyBasic / Star Seller",
-        price: "Rp 79.200",
-        gender: "men",
-        itemType: "tops",
-        image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&auto=format&fit=crop&q=80",
-        description: "Kaos katun tebal potongan boxy fit. Jahitan rapi tanpa logo, sangat cocok untuk daily outfit quiet luxury.",
-        link: "https://s.shopee.co.id/5AtLuvCTjb"
-    },
-    {
-        id: 2,
-        title: "Minimalist Matte Cardholder",
-        brand: "Local Craft",
+        title: "Heavyweight Plain Cotton Tee",
+        desc: "Boxy fit 24s combed cotton tee in plain white.",
         price: "Rp 65.000",
+        image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
         gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&auto=format&fit=crop&q=80",
-        description: "Dompet kartu kulit sintetis matte yang simpel dan tipis. Muat hingga 6 kartu + selipan uang.",
-        link: "https://shopee.co.id/"
+        type: "tops"
     },
     {
-        id: 3,
-        title: "Minimalist Canvas Tote Bag",
-        brand: "Daily Carry",
-        price: "Rp 79.000",
-        gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&auto=format&fit=crop&q=80",
-        description: "Tote bag bahan kanvas tebal polos tanpa motif. Muat laptop 14 inch, cocok buat ngantor atau sekadar ngopi.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 4,
-        title: "Unstructured Clean Baseball Cap",
-        brand: "Headwear Studio",
-        price: "Rp 49.000",
-        gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&auto=format&fit=crop&q=80",
-        description: "Topi polos tanpa logo dengan bahan twill halus. Memberikan sentuhan sporty-casual yang bersih.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 5,
-        title: "Ribbed Cotton Ankle Socks (Pack of 3)",
-        brand: "Basic Essentials",
-        price: "Rp 45.000",
-        gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=600&auto=format&fit=crop&q=80",
-        description: "Kaos kaki rajut bertekstur dengan warna-warna earth tone netral (cream, charcoal, off-white).",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 6,
-        title: "Relaxed Fit Linen Blend Shirt",
-        brand: "Essentials Co.",
-        price: "Rp 149.000",
-        gender: "men",
-        itemType: "tops",
-        image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&auto=format&fit=crop&q=80",
-        description: "Kemeja bahan linen halus berpotongan santai. Adem di cuaca tropis, memberikan vibe effortless mewah.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 7,
-        title: "Pleated Ankle Trousers",
-        brand: "Minimalist Wear",
-        price: "Rp 189.000",
-        gender: "men",
-        itemType: "pants",
-        image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&auto=format&fit=crop&q=80",
-        description: "Celana bahan lipatan plisket depan. Memberikan ilusi kaki lebih jenjang dan terlihat rapi seketika.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 8,
-        title: "Knit Polo Shirt Fine Gauge",
-        brand: "Modern Heritage",
-        price: "Rp 175.000",
-        gender: "men",
-        itemType: "tops",
-        image: "https://images.unsplash.com/photo-1625910513413-282470725a2e?w=600&auto=format&fit=crop&q=80",
-        description: "Kaos kerah bahan rajut halus tanpa kancing. Vibe old-money khas gaya quiet luxury.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 9,
-        title: "Tailored Smart Casual Shorts",
-        brand: "Urban Classic",
+        title: "Oversized Linen Blouse",
+        desc: "Breathable lightweight linen relaxed shirt.",
         price: "Rp 135.000",
-        gender: "men",
-        itemType: "pants",
-        image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&auto=format&fit=crop&q=80",
-        description: "Celana pendek bahan kain formal dengan potongan di atas lutut. Pas untuk weekend getaway santai.",
-        link: "https://shopee.co.id/"
+        image: "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "tops"
     },
     {
-        id: 10,
-        title: "Minimalist Leather Belt",
-        brand: "Craftsman Co.",
-        price: "Rp 129.000",
+        title: "Minimalist Wool-Blend Jacket",
+        desc: "Tailored outerwear for modern layering.",
+        price: "Rp 650.000",
+        image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
         gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=600&auto=format&fit=crop&q=80",
-        description: "Ikat pinggang kulit sapi asli dengan gesper perak doff yang bersih tanpa ukiran mencolok.",
-        link: "https://shopee.co.id/"
+        type: "tops"
     },
     {
-        id: 11,
-        title: "Fine Cashmere Crewneck Sweater",
-        brand: "UNIQLO U / Premium",
-        price: "Rp 1.299.000",
-        gender: "men",
-        itemType: "tops",
-        image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&auto=format&fit=crop&q=80",
-        description: "Sweater cashmere 100% serat halus. Potongan timeless untuk investasi jangka panjang capsule wardrobe.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 12,
-        title: "Clean Leather Low-Top Sneakers",
-        brand: "Footwear Select",
-        price: "Rp 450.000",
-        gender: "men",
-        itemType: "footwear",
-        image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop&q=80",
-        description: "Sepatu kets putih polos berbahan kulit asli. Desain serbaguna yang cocok dipadukan dengan celana apa saja.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 13,
-        title: "Oversized Wool Blend Trench Coat",
-        brand: "Atelier Studio",
-        price: "Rp 899.000",
-        gender: "men",
-        itemType: "tops",
-        image: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600&auto=format&fit=crop&q=80",
-        description: "Outer luaran bahan wool tebal dengan siluet jatuh yang elegan. Cocok untuk travelling atau acara formal.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 14,
-        title: "Structured Leather Crossbody Bag",
-        brand: "Leatherwork ID",
-        price: "Rp 380.000",
-        gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&auto=format&fit=crop&q=80",
-        description: "Tas selempang kulit berstruktur kokoh. Desain kokoh dan minimalis untuk membawa barang harian.",
-        link: "https://shopee.co.id/"
-    },
-    {
-        id: 15,
-        title: "Classic Acetate Sunglasses",
-        brand: "Eyewear Co.",
-        price: "Rp 320.000",
-        gender: "men",
-        itemType: "accessories",
-        image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&auto=format&fit=crop&q=80",
-        description: "Kacamata hitam frameless/acetate hitam pekat dengan perlindungan UV400. Memberikan kesan misterius dan berkelas.",
-        link: "https://shopee.co.id/"
+        title: "Ribbed Minimalist Knit Top",
+        desc: "Soft crewneck slim fit knitwear top.",
+        price: "Rp 115.000",
+        image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "tops"
     },
 
-    // --- WOMEN'S COLLECTION ---
+    // 2. BOTTOMS (CELANA / BAWAHAN)
     {
-        id: 16,
-        title: "Tessa Linen Pants Trousers",
-        brand: "AzikaCollection",
-        price: "Rp 85.000",
+        title: "Relaxed Pleated Trousers",
+        desc: "Tailored wide-leg smart casual pants.",
+        price: "Rp 210.000",
+        image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "men",
+        type: "bottoms"
+    },
+    {
+        title: "High-Waist Wide Linen Pants",
+        desc: "Flowy aesthetic high-rise minimalist pants.",
+        price: "Rp 175.000",
+        image: "https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
         gender: "women",
-        itemType: "pants",
-        image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&auto=format&fit=crop&q=80",
-        description: "Celana panjang linen berpotongan high waist dan loose fit. Nyaman untuk aktivitas santai atau liburan.",
-        link: "https://www.tokopedia.com/azikacollection/tessa-linen-pants-trousers-attire"
+        type: "bottoms"
+    },
+    {
+        title: "Nylon Minimalist Utility Shorts",
+        desc: "Quick-dry elastic waistband lounge shorts.",
+        price: "Rp 95.000",
+        image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "men",
+        type: "bottoms"
+    },
+    {
+        title: "High-Rise Midi A-Line Skirt",
+        desc: "Clean silhouette Korean style midi skirt.",
+        price: "Rp 145.000",
+        image: "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "bottoms"
+    },
+
+    // 3. FOOTWEAR (SEPATU / SANDAL)
+    {
+        title: "Low-Top Black Canvas Sneakers",
+        desc: "Classic vulcanized sole daily sneakers.",
+        price: "Rp 280.000",
+        image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "men",
+        type: "footwear"
+    },
+    {
+        title: "Pointed Leather Slip Mules",
+        desc: "Sleek daily wear flat leather loafers.",
+        price: "Rp 320.000",
+        image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "footwear"
+    },
+    {
+        title: "Genuine Leather Chunky Derby Shoes",
+        desc: "Lug sole dress shoes for modern casual fit.",
+        price: "Rp 850.000",
+        image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "men",
+        type: "footwear"
+    },
+    {
+        title: "Minimalist Strap Leather Sandals",
+        desc: "Slim ankle strap casual flat summer sandals.",
+        price: "Rp 165.000",
+        image: "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "footwear"
+    },
+
+    // 4. ACCESSORIES (AKSESORIS / TAS / JAM)
+    {
+        title: "Slim Leather Pocket Wallet",
+        desc: "Minimalist veg-tanned black cardholder.",
+        price: "Rp 50.000",
+        image: "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "men",
+        type: "accessories"
+    },
+    {
+        title: "Heavyweight Canvas Tote Bag",
+        desc: "Structured cotton shoulder bag for daily carry.",
+        price: "Rp 85.000",
+        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "accessories"
+    },
+    {
+        title: "Matte Black Leather Watch",
+        desc: "Simple analog dial watch with dark leather band.",
+        price: "Rp 480.000",
+        image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "men",
+        type: "accessories"
+    },
+    {
+        title: "Silver Minimalist Band Ring Set",
+        desc: "Polished stackable daily metal band rings.",
+        price: "Rp 50.000",
+        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80",
+        link: "https://shopee.co.id",
+        gender: "women",
+        type: "accessories"
     }
 ];
 
-// VARIABEL PENYIMPAN FILTER AKTIF
+// STATE FILTERING
 let currentGender = 'all';
-let currentItemType = 'all';
+let currentType = 'all';
 
-// FUNGSI UTAMA RENDER PRODUK
+// FUNGSI RENDER PRODUK KE HTML
 function renderProducts() {
-    const container = document.getElementById('productContainer');
-    if (!container) return;
-    
-    container.innerHTML = '';
+    const grid = document.getElementById('productGrid');
+    grid.innerHTML = '';
 
-    // FILTER PRODUK BERDASARKAN GENDER & ITEM TYPE
-    const filtered = products.filter(p => {
-        const matchGender = (currentGender === 'all') || (p.gender === currentGender);
-        const matchItem = (currentItemType === 'all') || (p.itemType === currentItemType);
-        return matchGender && matchItem;
+    const filtered = products.filter(item => {
+        const matchGender = (currentGender === 'all' || item.gender === currentGender);
+        const matchType = (currentType === 'all' || item.type === currentType);
+        return matchGender && matchType;
     });
 
-    // JIKA TIDAK ADA PRODUK YANG COCOK
-    if (filtered.length === 0) {
-        container.innerHTML = `
-            <div style="grid-column: 1/-1; text-align: center; padding: 4rem 0; color: #888888; font-size: 0.9rem; letter-spacing: 1px;">
-                NO ITEMS FOUND IN THIS CATEGORY.
-            </div>
-        `;
-        return;
-    }
-
-    // TAMPILKAN PRODUK HASIL FILTER
-    filtered.forEach(product => {
-        const cardHTML = `
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="${product.image}" alt="${product.title}" class="card-img" loading="lazy">
+    filtered.forEach(item => {
+        const cardHtml = `
+            <a href="${item.link}" target="_blank" class="product-card" data-gender="${item.gender}" data-type="${item.type}">
+                <div class="product-image-wrap">
+                    <img src="${item.image}" alt="${item.title}" class="product-image">
                 </div>
-                <span class="tag">${product.brand}</span>
-                <h3 class="card-title">${product.title}</h3>
-                <div class="card-price">${product.price}</div>
-                <p class="card-desc">${product.description}</p>
-                <a href="${product.link}" target="_blank" rel="noopener" class="btn-affiliate">View Detail ↗</a>
-            </div>
+                <h2 class="product-title">${item.title}</h2>
+                <p class="product-desc">${item.desc}</p>
+                <div class="product-price">${item.price}</div>
+                <span class="buy-btn">View on Shopee &rarr;</span>
+            </a>
         `;
-        container.innerHTML += cardHTML;
+        grid.innerHTML += cardHtml;
     });
 }
 
-// FUNGSI GANTI GENDER (ALL / MEN / WOMEN)
+// HANDLER FILTER GENDER
 function setGender(gender, element) {
-    currentGender = gender;
-    
-    // Update tampilan tombol aktif
+    currentGender = gender.toLowerCase();
     document.querySelectorAll('.gender-btn').forEach(btn => btn.classList.remove('active'));
-    if (element) element.classList.add('active');
-    
+    element.classList.add('active');
     renderProducts();
 }
 
-// FUNGSI GANTI ITEM (ALL EDITS / TOPS / PANTS / FOOTWEAR / ACCESSORIES)
-function setItemType(type, element) {
-    currentItemType = type;
-    
-    // Update tampilan tombol aktif
-    document.querySelectorAll('.item-btn').forEach(btn => btn.classList.remove('active'));
-    if (element) element.classList.add('active');
-    
+// HANDLER FILTER TIPE
+function setType(type, element) {
+    currentType = type.toLowerCase();
+    document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
+    element.classList.add('active');
     renderProducts();
 }
 
-// EXECUTE PAS HALAMAN PERTAMA DIBUKA
-document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
-});
+// JALANKAN OTOMATIS SAAT HALAMAN SELESAI DI-LOAD
+document.addEventListener('DOMContentLoaded', renderProducts);
