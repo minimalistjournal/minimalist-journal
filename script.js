@@ -1,7 +1,5 @@
 /* ------------------------------------------------------------------
    THE MINIMALIST JOURNAL (TMJ) - DATABASE PRODUK
-   Filter Gender: "men" | "women" | "unisex"
-   Filter Kategori: "Tops" | "Bottoms" | "Footwear" | "Accessories"
 ------------------------------------------------------------------- */
 const PRODUCTS = [
   {
@@ -11,7 +9,7 @@ const PRODUCTS = [
     price: 67200,
     cat: "Tops",
     for: "men",
-    img: "images/tops-1.jpg",
+    img: "", // Kosongkan dulu sampai gambar disiapkan di folder images
     url: "https://s.shopee.co.id/7puN5W8IA8" // Link affiliate Shopee kamu
   },
   {
@@ -136,14 +134,21 @@ const rupiah = n => "Rp " + n.toLocaleString("id-ID");
 const pad = n => String(n).padStart(3, "0");
 
 function buildFilters() {
-  $("gender").innerHTML = GENDERS.map(([v, l]) =>
-    `<button type="button" data-gender="${v}" aria-pressed="${state.gender === v}">${l}</button>`
-  ).join("");
+  const genderEl = $("gender");
+  const tabsEl = $("tabs");
 
-  const present = CATEGORIES.filter(c => PRODUCTS.some(p => p.cat === c));
-  $("tabs").innerHTML = [["all", "All Items"], ...present.map(c => [c, c])].map(([v, l]) =>
-    `<button type="button" data-cat="${v}" aria-pressed="${state.cat === v}">${l}</button>`
-  ).join("");
+  if (genderEl) {
+    genderEl.innerHTML = GENDERS.map(([v, l]) =>
+      `<button type="button" data-gender="${v}" aria-pressed="${state.gender === v}">${l}</button>`
+    ).join("");
+  }
+
+  if (tabsEl) {
+    const present = CATEGORIES.filter(c => PRODUCTS.some(p => p.cat === c));
+    tabsEl.innerHTML = [["all", "All Items"], ...present.map(c => [c, c])].map(([v, l]) =>
+      `<button type="button" data-cat="${v}" aria-pressed="${state.cat === v}">${l}</button>`
+    ).join("");
+  }
 }
 
 function card(p) {
@@ -164,16 +169,23 @@ function card(p) {
 }
 
 function render() {
+  const gridEl = $("grid");
+  const countEl = $("count");
+
+  if (!gridEl) return;
+
   const list = PRODUCTS.filter(p => 
     (state.cat === "all" || p.cat === state.cat) &&
     (state.gender === "all" || p.for === state.gender || p.for === "unisex")
   );
 
-  $("grid").innerHTML = list.length
+  gridEl.innerHTML = list.length
     ? list.map(card).join("")
     : `<div class="empty" style="grid-column:1/-1"><p>No items found in this section.</p><button type="button" id="reset">Show all items</button></div>`;
 
-  $("count").textContent = `${list.length} ${list.length === 1 ? "piece" : "pieces"}`;
+  if (countEl) {
+    countEl.textContent = `${list.length} ${list.length === 1 ? "piece" : "pieces"}`;
+  }
 
   document.querySelectorAll("[data-gender]").forEach(b => 
     b.setAttribute("aria-pressed", b.dataset.gender === state.gender)
@@ -199,6 +211,8 @@ document.addEventListener("click", e => {
   }
 });
 
-// Initialization
-buildFilters();
-render();
+// Jalankan fungsi saat struktur halaman selesai dimuat
+document.addEventListener("DOMContentLoaded", () => {
+  buildFilters();
+  render();
+});
