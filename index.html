@@ -1,57 +1,77 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- SEO Primary Meta Tags -->
-  <title>The Minimalist Journal (TMJ) — Curated Archive</title>
-  <meta name="title" content="The Minimalist Journal (TMJ) — Curated Archive">
-  <meta name="description" content="An independent digital museum & curated archive of minimalist, clean, and timeless clothing and accessories in Indonesia.">
-  <meta name="keywords" content="minimalist fashion, fashion archive, baju polos oversized, rekomendasi shopee, fashion pria wanita, clean aesthetic, minimal style, the minimalist journal">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="Indonesian">
-  <meta name="author" content="The Minimalist Journal">
-  <meta name="theme-color" content="#F8F7F3">
-  
-  <!-- Open Graph / Facebook / WhatsApp Share Preview Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://minimalistjournal.github.io/">
-  <meta property="og:title" content="The Minimalist Journal (TMJ) — Curated Archive">
-  <meta property="og:description" content="An independent journal and digital museum of minimalist, clean and timeless clothing.">
-  <meta property="og:image" content="https://minimalistjournal.github.io/images/og-preview.jpg">
-
-  <!-- Twitter Card Meta Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://minimalistjournal.github.io/">
-  <meta property="twitter:title" content="The Minimalist Journal (TMJ) — Curated Archive">
-  <meta property="twitter:description" content="An independent journal and digital museum of minimalist, clean and timeless clothing.">
-  <meta property="twitter:image" content="https://minimalistjournal.github.io/images/og-preview.jpg">
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://minimalistjournal.github.io/">
-  
-  <!-- Favicon & Fonts -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231B1C1A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23F8F7F3'%3ET%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Minimalist Journal (TMJ)</title>
+<meta name="description" content="TMJ is an independent journal and digital museum of minimalist, clean and timeless clothing and accessories.">
+<meta name="theme-color" content="#F8F7F3">
+<meta property="og:title" content="The Minimalist Journal (TMJ)">
+<meta property="og:description" content="An archive of clothes made to be kept.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231B1C1A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23F8F7F3'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header & Navigation -->
-  <header class="site-header">
-    <div class="wrap bar">
-      <a class="logo" href="./">The Minimalist Journal</a>
-      <nav class="gender" id="gender" aria-label="Gender Collection"></nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="./">The Minimalist Journal</a>
+    <nav class="gender" id="gender" aria-label="Collection"></nav>
+  </div>
+</header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="wrap hero" aria-labelledby="hero-title">
-      <h1 id="hero-title">An archive of clothes made to be kept.</h1>
-      <div class="hero-side">
-        <p>TMJ
+<main>
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">An archive of clothes made to be kept.</h1>
+    <div class="hero-side">
+      <p>TMJ is an independent journal and digital museum. We collect minimalist, clean and timeless clothing and accessories, and arrange them so they are easy to look at and easy to keep.</p>
+      <p class="issue">Issue 01, October 2026</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <div class="wrap">
+      <div class="tabs" id="tabs" role="group" aria-label="Category"></div>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="wrap shelf" aria-label="Collection">
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>How we choose</h2>
+      <div class="about-body">
+        <dl>
+          <dt>Minimal</dt>
+          <dd>No loud logos and no excess detail. If a piece needs decoration to be interesting, it doesn’t make the archive.</dd>
+          <dt>Clean</dt>
+          <dd>Simple lines, honest fabrics and considered proportions.</dd>
+          <dt>Timeless</dt>
+          <dd>We look for pieces that will still make sense in five years, not five weeks.</dd>
+        </dl>
+        <p>TMJ doesn’t sell clothes. Every piece links to a seller on Shopee, where you can check sizes, reviews and stock before you buy.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>TMJ may earn a small commission when you buy through a Shopee link. It doesn’t change the price you pay.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <span>© 2026 The Minimalist Journal</span>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
