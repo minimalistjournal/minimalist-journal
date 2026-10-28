@@ -1,204 +1,204 @@
-// DATA KATALOG PRODUK (SISTEM TINGGAL EDIT DI SINI NANTI)
-const products = [
-    // 1. TOPS (BAJU / ATASAN)
-    {
-        title: "Heavyweight Plain Cotton Tee",
-        desc: "Heavy 24s combed cotton tee in boxy fit.",
-        price: "Rp 67.200",
-        image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80",
-        link: "https://s.shopee.co.id/7puN5W8lA8",
-        gender: "men",
-        type: "tops"
-    },
-    {
-        title: "Oversized Linen Blouse",
-        desc: "Breathable lightweight linen relaxed shirt.",
-        price: "Rp 135.000",
-        image: "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "tops"
-    },
-    {
-        title: "Minimalist Wool-Blend Jacket",
-        desc: "Tailored outerwear for modern layering.",
-        price: "Rp 650.000",
-        image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "tops"
-    },
-    {
-        title: "Ribbed Minimalist Knit Top",
-        desc: "Soft crewneck slim fit knitwear top.",
-        price: "Rp 115.000",
-        image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "tops"
-    },
-
-    // 2. BOTTOMS (CELANA / BAWAHAN)
-    {
-        title: "Relaxed Pleated Trousers",
-        desc: "Tailored wide-leg smart casual pants.",
-        price: "Rp 210.000",
-        image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "bottoms"
-    },
-    {
-        title: "High-Waist Wide Linen Pants",
-        desc: "Flowy aesthetic high-rise minimalist pants.",
-        price: "Rp 175.000",
-        image: "https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "bottoms"
-    },
-    {
-        title: "Nylon Minimalist Utility Shorts",
-        desc: "Quick-dry elastic waistband lounge shorts.",
-        price: "Rp 95.000",
-        image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "bottoms"
-    },
-    {
-        title: "High-Rise Midi A-Line Skirt",
-        desc: "Clean silhouette Korean style midi skirt.",
-        price: "Rp 145.000",
-        image: "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "bottoms"
-    },
-
-    // 3. FOOTWEAR (SEPATU / SANDAL)
-    {
-        title: "Low-Top Black Canvas Sneakers",
-        desc: "Classic vulcanized sole daily sneakers.",
-        price: "Rp 280.000",
-        image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "footwear"
-    },
-    {
-        title: "Pointed Leather Slip Mules",
-        desc: "Sleek daily wear flat leather loafers.",
-        price: "Rp 320.000",
-        image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "footwear"
-    },
-    {
-        title: "Genuine Leather Chunky Derby Shoes",
-        desc: "Lug sole dress shoes for modern casual fit.",
-        price: "Rp 850.000",
-        image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "footwear"
-    },
-    {
-        title: "Minimalist Strap Leather Sandals",
-        desc: "Slim ankle strap casual flat summer sandals.",
-        price: "Rp 165.000",
-        image: "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "footwear"
-    },
-
-    // 4. ACCESSORIES (AKSESORIS / TAS / JAM)
-    {
-        title: "Slim Leather Pocket Wallet",
-        desc: "Minimalist veg-tanned black cardholder.",
-        price: "Rp 50.000",
-        image: "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "accessories"
-    },
-    {
-        title: "Heavyweight Canvas Tote Bag",
-        desc: "Structured cotton shoulder bag for daily carry.",
-        price: "Rp 85.000",
-        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "accessories"
-    },
-    {
-        title: "Matte Black Leather Watch",
-        desc: "Simple analog dial watch with dark leather band.",
-        price: "Rp 480.000",
-        image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "men",
-        type: "accessories"
-    },
-    {
-        title: "Silver Minimalist Band Ring Set",
-        desc: "Polished stackable daily metal band rings.",
-        price: "Rp 50.000",
-        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
-        gender: "women",
-        type: "accessories"
-    }
+/* ------------------------------------------------------------------
+   THE MINIMALIST JOURNAL (TMJ) - DATABASE PRODUK
+   Filter Gender: "men" | "women" | "unisex"
+   Filter Kategori: "Tops" | "Bottoms" | "Footwear" | "Accessories"
+------------------------------------------------------------------- */
+const PRODUCTS = [
+  {
+    id: 1,
+    name: "HEAVYWEIGHT PLAIN COTTON TEE",
+    desc: "Heavyweight 200 GSM combed cotton in a relaxed boxy silhouette.",
+    price: 67200,
+    cat: "Tops",
+    for: "men",
+    img: "images/tops-1.jpg",
+    url: "https://s.shopee.co.id/7puN5W8IA8" // Link affiliate Shopee kamu
+  },
+  {
+    id: 2,
+    name: "OVERSIZED LINEN BLOUSE",
+    desc: "Breathable lightweight linen relaxed shirt for everyday wear.",
+    price: 135000,
+    cat: "Tops",
+    for: "women",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 3,
+    name: "MINIMALIST WOOL-BLEND JACKET",
+    desc: "Tailored outerwear designed for clean modern layering.",
+    price: 650000,
+    cat: "Tops",
+    for: "unisex",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 4,
+    name: "RIBBED MINIMALIST KNIT TOP",
+    desc: "Soft crewneck slim fit knitwear top.",
+    price: 115000,
+    cat: "Tops",
+    for: "women",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 5,
+    name: "RELAXED PLEATED TROUSERS",
+    desc: "Tailored wide-leg smart casual trousers.",
+    price: 210000,
+    cat: "Bottoms",
+    for: "men",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 6,
+    name: "HIGH-WAIST WIDE LINEN PANTS",
+    desc: "Flowy aesthetic high-rise minimalist pants.",
+    price: 175000,
+    cat: "Bottoms",
+    for: "women",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 7,
+    name: "NYLON UTILITY SHORTS",
+    desc: "Quick-dry elastic waistband minimalist lounge shorts.",
+    price: 95000,
+    cat: "Bottoms",
+    for: "men",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 8,
+    name: "HIGH-RISE MIDI A-LINE SKIRT",
+    desc: "Clean silhouette Korean style midi skirt.",
+    price: 145000,
+    cat: "Bottoms",
+    for: "women",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 9,
+    name: "LOW-TOP BLACK CANVAS SNEAKERS",
+    desc: "Classic vulcanized sole daily minimalist sneakers.",
+    price: 280000,
+    cat: "Footwear",
+    for: "unisex",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 10,
+    name: "POINTED LEATHER SLIP MULES",
+    desc: "Sleek daily wear flat leather loafers.",
+    price: 320000,
+    cat: "Footwear",
+    for: "women",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 11,
+    name: "LEATHER CHUNKY DERBY SHOES",
+    desc: "Lug sole dress shoes for modern casual fit.",
+    price: 850000,
+    cat: "Footwear",
+    for: "men",
+    img: "",
+    url: "#"
+  },
+  {
+    id: 12,
+    name: "MINIMALIST LEATHER SANDALS",
+    desc: "Slim ankle strap casual flat summer sandals.",
+    price: 165000,
+    cat: "Footwear",
+    for: "women",
+    img: "",
+    url: "#"
+  }
 ];
 
-// STATE FILTERING
-let currentGender = 'all';
-let currentType = 'all';
+const CATEGORIES = ["Tops", "Bottoms", "Footwear", "Accessories"];
+const GENDERS = [["all", "All"], ["men", "Men"], ["women", "Women"]];
 
-// FUNGSI RENDER PRODUK KE HTML
-function renderProducts() {
-    const grid = document.getElementById('productGrid');
-    grid.innerHTML = '';
+const state = { cat: "all", gender: "all" };
+const $ = id => document.getElementById(id);
 
-    const filtered = products.filter(item => {
-        const matchGender = (currentGender === 'all' || item.gender === currentGender);
-        const matchType = (currentType === 'all' || item.type === currentType);
-        return matchGender && matchType;
-    });
+const rupiah = n => "Rp " + n.toLocaleString("id-ID");
+const pad = n => String(n).padStart(3, "0");
 
-    filtered.forEach(item => {
-        const cardHtml = `
-            <a href="${item.link}" target="_blank" class="product-card" data-gender="${item.gender}" data-type="${item.type}">
-                <div class="product-image-wrap">
-                    <img src="${item.image}" alt="${item.title}" class="product-image">
-                </div>
-                <h2 class="product-title">${item.title}</h2>
-                <p class="product-desc">${item.desc}</p>
-                <div class="product-price">${item.price}</div>
-                <span class="buy-btn">View on Shopee &rarr;</span>
-            </a>
-        `;
-        grid.innerHTML += cardHtml;
-    });
+function buildFilters() {
+  $("gender").innerHTML = GENDERS.map(([v, l]) =>
+    `<button type="button" data-gender="${v}" aria-pressed="${state.gender === v}">${l}</button>`
+  ).join("");
+
+  const present = CATEGORIES.filter(c => PRODUCTS.some(p => p.cat === c));
+  $("tabs").innerHTML = [["all", "All Items"], ...present.map(c => [c, c])].map(([v, l]) =>
+    `<button type="button" data-cat="${v}" aria-pressed="${state.cat === v}">${l}</button>`
+  ).join("");
 }
 
-// HANDLER FILTER GENDER
-function setGender(gender, element) {
-    currentGender = gender.toLowerCase();
-    document.querySelectorAll('.gender-btn').forEach(btn => btn.classList.remove('active'));
-    element.classList.add('active');
-    renderProducts();
+function card(p) {
+  const media = p.img
+    ? `<img src="${p.img}" alt="${p.name}" loading="lazy">`
+    : `<div class="ph" aria-hidden="true">TMJ</div>`;
+
+  return `<article class="card">
+    <figure class="plate">${media}</figure>
+    <div class="meta"><span>${p.cat}</span><span>No. ${pad(p.id)}</span></div>
+    <h3 class="name">${p.name}</h3>
+    <p class="desc">${p.desc}</p>
+    <div class="buy">
+      <span class="price">${rupiah(p.price)}</span>
+      <a class="shop" href="${p.url}" target="_blank" rel="noopener sponsored">View on Shopee</a>
+    </div>
+  </article>`;
 }
 
-// HANDLER FILTER TIPE
-function setType(type, element) {
-    currentType = type.toLowerCase();
-    document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
-    element.classList.add('active');
-    renderProducts();
+function render() {
+  const list = PRODUCTS.filter(p => 
+    (state.cat === "all" || p.cat === state.cat) &&
+    (state.gender === "all" || p.for === state.gender || p.for === "unisex")
+  );
+
+  $("grid").innerHTML = list.length
+    ? list.map(card).join("")
+    : `<div class="empty" style="grid-column:1/-1"><p>No items found in this section.</p><button type="button" id="reset">Show all items</button></div>`;
+
+  $("count").textContent = `${list.length} ${list.length === 1 ? "piece" : "pieces"}`;
+
+  document.querySelectorAll("[data-gender]").forEach(b => 
+    b.setAttribute("aria-pressed", b.dataset.gender === state.gender)
+  );
+  document.querySelectorAll("[data-cat]").forEach(b => 
+    b.setAttribute("aria-pressed", b.dataset.cat === state.cat)
+  );
 }
 
-// JALANKAN OTOMATIS SAAT HALAMAN SELESAI DI-LOAD
-document.addEventListener('DOMContentLoaded', renderProducts);
+document.addEventListener("click", e => {
+  const g = e.target.closest("[data-gender]");
+  const c = e.target.closest("[data-cat]");
+
+  if (g) { 
+    state.gender = g.dataset.gender; 
+    render(); 
+  } else if (c) { 
+    state.cat = c.dataset.cat; 
+    render(); 
+  } else if (e.target.id === "reset") { 
+    state.cat = state.gender = "all"; 
+    render(); 
+  }
+});
+
+// Initialization
+buildFilters();
+render();
