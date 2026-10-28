@@ -3,10 +3,10 @@ const products = [
     // 1. TOPS (BAJU / ATASAN)
     {
         title: "Heavyweight Plain Cotton Tee",
-        desc: "Boxy fit 24s combed cotton tee in plain white.",
-        price: "Rp 65.000",
+        desc: "Heavy 24s combed cotton tee in boxy fit.",
+        price: "Rp 67.200",
         image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80",
-        link: "https://shopee.co.id",
+        link: "https://s.shopee.co.id/7puN5W8lA8",
         gender: "men",
         type: "tops"
     },
