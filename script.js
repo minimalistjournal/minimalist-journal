@@ -6,7 +6,7 @@
    url:  your Shopee affiliate link
 ------------------------------------------------------------------- */
 const PRODUCTS = [
-  { name:"Heavyweight Plain Cotton Tee", desc:"Heavy 24s combed cotton tee in boxy fit.", price:67200, cat:"Tops", for:"men", img:"https://ais-dev-uudoqgpiomh7tk2chtzjn6-990763247036.asia-east1.run.app/src/assets/images/heavyweight_tee_hero_1793258698402.jpg", url:"#" },
+  { name:"Heavyweight Plain Cotton Tee", desc:"Heavy 24s combed cotton tee in boxy fit.", price:67200, cat:"Tops", for:"men", img:"images/tops-1.jpg.jpg", url:"#" },
   { name:"Oversized Linen Blouse", desc:"Breathable lightweight linen relaxed shirt.", price:135000, cat:"Tops", for:"women", img:"", url:"#" },
   { name:"Minimalist Wool-Blend Jacket", desc:"Tailored outerwear for modern layering.", price:650000, cat:"Tops", for:"unisex", img:"", url:"#" },
   { name:"Ribbed Minimalist Knit Top", desc:"Soft crewneck slim fit knitwear top.", price:115000, cat:"Tops", for:"women", img:"", url:"#" },
